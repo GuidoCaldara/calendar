@@ -1,0 +1,70 @@
+.container {
+  display: flex;
+  overflow-x: auto;
+  width: 90%;
+  margin: auto;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.calendarHeader {
+  width: 100%;
+  display: flex;
+  .weekWrapper {
+    width: 419px;
+    display: inline-block;
+    background: #dddddd;
+    padding: 10px 0px;
+    justify-content: center;
+    display: flex;
+    border-right: 1px solid black;
+  }
+}
+
+.userRow {
+  display: flex;
+}
+.daysWrapper {
+  .dayBox {
+    width: 59px;
+    position: relative;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+    &.white {
+      background-color: #f6f6f6;
+    }
+    &.gray {
+      background-color: antiquewhite;
+    }
+    span {
+      top: 4px;
+      right: 6px;
+      position: absolute;
+      font-size: 12px;
+      color: gray;
+    }
+  }
+}
+
+.formBackground {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 100vh;
+  background: #00000069;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .form {
+    width: 40%;
+    height: 50vh;
+    background: white;
+    border-radius: 20px;
+  }
+}
