@@ -26,29 +26,6 @@
   display: flex;
 }
 .daysWrapper {
-  .dayBox {
-    width: 59px;
-    position: relative;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
-    cursor: pointer;
-    &.white {
-      background-color: #f6f6f6;
-    }
-    &.gray {
-      background-color: antiquewhite;
-    }
-    span {
-      top: 4px;
-      right: 6px;
-      position: absolute;
-      font-size: 12px;
-      color: gray;
-    }
-  }
 }
 
 .formBackground {
@@ -66,5 +43,43 @@
     height: 50vh;
     background: white;
     border-radius: 20px;
+  }
+}
+
+.dayWrapper {
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  .bookedField {
+    height: 16px;
+    &.free {
+      background-color: green;
+    }
+    &.booked {
+      background-color: red;
+    }
+    &.off {
+      background-color: black;
+    }
+  }
+  .dayBox {
+    width: 59px;
+    position: relative;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    &.white {
+      background-color: #f6f6f6;
+    }
+    &.gray {
+      background-color: antiquewhite;
+    }
+    span {
+      top: 4px;
+      right: 6px;
+      position: absolute;
+      font-size: 12px;
+      color: gray;
+    }
   }
 }
